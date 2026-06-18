@@ -1563,7 +1563,8 @@ h1, h2, h3, h4, h5 {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -1590,6 +1591,12 @@ h1, h2, h3, h4, h5 {
 /* ==========================================================================
    RESPONSIVE STYLES (MEDIA QUERIES)
    ========================================================================== */
+@media (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1623,12 +1630,122 @@ h1, h2, h3, h4, h5 {
   section {
     padding: 5rem 0;
   }
-  .nav {
-    display: none; /* Mobile menu can be added if needed, or simple scrolling links */
+  
+  /* Typography Scaling */
+  .hero-title {
+    font-size: 2.5rem;
   }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .about-title, .skills-col-title, .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Container Padding Adjustments */
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Header & Mobile Menu Overlay */
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+    color: var(--text-primary);
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  .mobile-nav-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem;
+    z-index: 100;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .mobile-nav-link {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .mobile-nav-link:hover {
+    color: var(--accent-color);
+  }
+
+  /* Projects Section - Mobile Card Spacing & Horizontal Scrollable Tabs */
+  .folder-nav {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
+    scrollbar-width: none; /* Firefox */
+  }
+  .folder-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .folder-tab {
+    white-space: nowrap;
+    padding: 0.75rem 1.25rem;
+    flex-shrink: 0;
+  }
+  
+  .folder-inner {
+    padding: 0 1.25rem 1.5rem 1.25rem;
+  }
+  
+  .browser-tabs-row {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+  .browser-tabs-row::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .browser-tab-button {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* Footer Adjustments */
   .footer-container {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .about-title, .skills-col-title, .section-title {
+    font-size: 1.75rem;
+  }
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .contact-icon-box {
+    margin: 0 auto;
+  }
+  .contact-socials {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
