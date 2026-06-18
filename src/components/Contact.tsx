@@ -52,7 +52,8 @@ export const Contact = () => {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          subject: formData.subject || `Portfolio Contact from ${formData.name}`,
+          subject: `[Portfolio Contact] ${formData.subject || 'New Inquiry'}`,
+          from_name: 'Portfolio Contact Form',
         }),
       });
 
