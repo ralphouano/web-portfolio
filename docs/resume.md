@@ -11,7 +11,7 @@
 ---
 
 ## Executive Summary
-Detail-oriented and results-driven **Fullstack Engineer** with a Bachelor of Science in Information Technology. Proven experience designing and implementing responsive user interfaces (React, Vue, TypeScript) and highly optimized backend microservices and APIs (Laravel, Go, Node.js). Passionate about database performance optimization, real-time WebSocket communication, and writing clean, reliable code backed by extensive test coverage and strict static analysis.
+**Fullstack Engineer** with a Bachelor of Science in Information Technology. Experienced in building user interfaces (React, Vue, TypeScript) and backend APIs (Laravel, Go, Node.js). Specializes in database query optimization, WebSocket-based real-time features, and writing tested code using static analysis and automated unit test suites.
 
 ---
 
@@ -40,35 +40,35 @@ Detail-oriented and results-driven **Fullstack Engineer** with a Bachelor of Sci
 *Real-time Food Reservation & Canteen Monitoring Platform*
 *   **Stack:** Laravel, Livewire, Alpine.js, Tailwind CSS (TALL Stack), Redis, Laravel Reverb
 *   **Key Contributions:**
-    *   **Architected and engineered** a real-time reservation portal using the TALL stack, **reducing reservation queue friction** for Saint Columban College students through instant digital booking.
-    *   **Implemented** real-time WebSocket event broadcasting with Laravel Reverb and Redis caching, **eliminating manual page refreshes** and ensuring 100% accurate inventory sync across all concurrent users.
-    *   **Optimized** client-side telemetry state using Alpine.js and Tailwind CSS, **ensuring sub-15ms rendering responsiveness** during peak reservation times.
+    *   **Architected and engineered** a reservation portal using the TALL stack, allowing students to place digital orders directly.
+    *   **Implemented** WebSocket event broadcasting with Laravel Reverb and Redis caching, updating food item inventory across all active clients in real-time.
+    *   **Optimized** client-side state using Alpine.js and Tailwind CSS, achieving sub-15ms client render times under peak load.
 
 ### 2. SSS Daily Transaction Logs
 *Transaction Logs Optimization & Database Tuning Console*
 *   **Stack:** Laravel, Vue.js, Inertia.js, Tailwind CSS (VILT Stack), MySQL
 *   **Key Contributions:**
-    *   **Developed** a centralized VILT stack dashboard to display transaction audit logs, **providing real-time visibility** into database status metrics for system admins.
-    *   **Overhauled** database query performance by profiling execution plans and establishing composite indexes, **slashing query latency by 95%** (from 240ms to 12ms) on a 1.2M row dataset.
-    *   **Streamlined** server-to-client data pipelines using Inertia.js and Vue 3, **reducing network overhead** and improving page transition speeds.
+    *   **Developed** a VILT stack dashboard to display transaction logs and database status metrics for system administrators.
+    *   **Overhauled** database query performance by profiling execution plans and establishing composite indexes, reducing query times from **240ms to 12ms** on a 1.2M row table.
+    *   **Streamlined** server-to-client data transfer using Inertia.js and Vue 3 to reduce HTTP payload sizes and speed up page changes.
 
 ### 3. FileSSShare
 *Fun Drag-and-Drop Real-time Sharing Application*
 *   **Stack:** React, Laravel API, Laravel Reverb, Tailwind CSS
 *   **Key Contributions:**
-    *   **Created** a drag-and-drop file-uploading dashboard in React, **simplifying user interaction** and file-sharing workflows.
-    *   **Integrated** real-time file upload status updates and push notifications via Laravel Reverb, **allowing users to instantly broadcast secure download tokens** upon 100% upload completion.
+    *   **Created** an upload dashboard in React, allowing users to drag and drop files.
+    *   **Integrated** upload progress tracking and push notifications via Laravel Reverb, broadcasting secure download keys to recipients upon completion.
 
 ### 4. DateSimply
 *Clean Architecture Calendar Booking API Assessment*
 *   **Stack:** Laravel, Pest, PHPUnit, PHP Service Layers
 *   **Key Contributions:**
-    *   **Refactored** the date-parsing booking API to follow strict Service-Layer and Clean Architecture patterns, **enhancing codebase maintainability** and decoupling business logic.
-    *   **Enforced** strict type safety and code standards by achieving 100% Pest unit test coverage and setting PHPStan static analysis to Level 8, **minimizing runtime exceptions in production**.
+    *   **Refactored** the date-booking API to follow Service-Layer and Clean Architecture patterns, decoupling routing from database query logic.
+    *   **Enforced** strict type safety by achieving 100% test coverage in Pest and setting PHPStan static analysis to Level 8 to catch type errors prior to runtime.
 
 ### 5. Moonchild E-commerce
 *Full-Stack Storefront & Cart Session Handler*
 *   **Stack:** Laravel Blade, Livewire, Alpine.js, Tailwind CSS
 *   **Key Contributions:**
-    *   **Authored** a custom state tracker to manage shopping cart sessions, **preventing cart state loss** across page navigations.
-    *   **Constructed** checkout pipelines and session cache modules using Laravel and Redis cache drivers, **securing session data** and optimizing product retrieval speeds.
+    *   **Authored** a cart state tracker to store shopping cart details in session variables, preventing cart reset during page navigation.
+    *   **Constructed** checkout pipelines and session cache modules using Laravel and Redis cache drivers, storing cart information in Redis to optimize database lookups.
