@@ -24,6 +24,7 @@
 *   **Real-Time & WebSockets:** Laravel Reverb, WebSockets (native / socket.io), Redis Pub/Sub
 *   **Developer Tooling & DevOps:** Git, GitHub workflows, Docker, Nginx, Vite, Vercel, pnpm/npm, CI/CD
 *   **Testing & Code Quality:** Pest PHP, PHPUnit, PHPStan (Level 8 static analysis), service-layer patterns
+*   **Soft Skills:** Problem-Solving | Collaboration | Adaptability | Time Management | Communication | Leadership | Creativity | Attention to Detail | Decision-Making | Continuous Learning | Initiative | Resilience
 
 ---
 
