@@ -77,7 +77,7 @@ export const Hero = () => {
             Designing <span className="text-gradient">high-fidelity</span> user interfaces & robust architecture.
           </h1>
           <p className="hero-desc">
-            A software engineer dedicated to crafting fluid, premium frontend experiences and maintaining scalable, high-throughput systems on the backend.
+            A web developer dedicated to crafting fluid, premium frontend experiences and maintaining scalable, high-throughput systems on the backend.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">Explore Work</a>
