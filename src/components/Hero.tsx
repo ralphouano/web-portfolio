@@ -23,7 +23,7 @@ export const Hero = () => {
           <code className="code-block language-json">
             <span className="c-bracket">{`{`}</span><br />
             <span className="c-indent"></span><span className="c-key">"name"</span>: <span className="c-val">"Ralph Ouano"</span>,<br />
-            <span className="c-indent"></span><span className="c-key">"role"</span>: <span className="c-val">"Fullstack Engineer"</span>,<br />
+            <span className="c-indent"></span><span className="c-key">"role"</span>: <span className="c-val">"Web Developer"</span>,<br />
             <span className="c-indent"></span><span className="c-key">"education"</span>: <span className="c-val">"BSIT - Saint Columban College"</span>,<br />
             <span className="c-indent"></span><span className="c-key">"specialties"</span>: <span className="c-bracket">[</span><br />
             <span className="c-double-indent"></span><span className="c-val">"Premium UI Engineering"</span>,<br />
