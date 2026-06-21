@@ -93,7 +93,7 @@ export const About = () => {
             className="about-left"
           >
             <p className="about-bio">
-              I am <strong>Ralph Ouano</strong>, a graduate of <strong>BSIT from Saint Columban College</strong> and a passionate <strong>Fullstack Engineer</strong>. I specialize in building responsive, high-fidelity frontends while maintaining fast, reliable backend microservices.
+              I am <strong>Ralph Ouano</strong>, a graduate of <strong>BSIT from Saint Columban College</strong> and a passionate <strong>Web Developer</strong>. I specialize in building responsive, high-fidelity frontends while maintaining fast, reliable backend microservices.
             </p>
             <p className="about-bio">
               With experience designing real-time ordering canteen systems, digitized government logging applications, and high-performance WebRTC utilities, I focus on delivering seamless software solutions that integrate aesthetics and robust engineering. I am currently open to work on-site, remote, and hybrid setups.
