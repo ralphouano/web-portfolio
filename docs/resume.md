@@ -37,7 +37,15 @@
 
 ## Core Projects
 
-### 1. SCC Canteen Reservation & Monitoring System
+### 1. Pulse: Ephemeral P2P Chat & Video (Technical Assessment)
+*Real-time, Privacy-First Anonymous Connection Web Application*
+*   **Stack:** React 19, Next.js 16 (App Router), WebRTC, Mapbox GL, Prisma 7, PostgreSQL, Web Audio API, Vanilla CSS
+*   **Key Contributions:**
+    *   **Refactored and secured** a broken starter repository, resolving critical WebRTC congestion bottlenecks by implementing custom data-channel buffering and chunk validation.
+    *   **Designed and built** a sleek dark-mode glassmorphic interface with an interactive Mapbox GL globe, synthesized Web Audio UX, and client-side dynamic HEIC image conversion.
+    *   **Hardened system security** by introducing cryptographic session secrets to mitigate IDOR signaling exploits, establishing automatic stale signaling purges, and optimizing signaling rate throttling down to 300ms.
+
+### 2. SCC Canteen Reservation & Monitoring System
 *Real-time Food Reservation & Canteen Monitoring Platform*
 *   **Stack:** Laravel, Livewire, Alpine.js, Tailwind CSS (TALL Stack), Redis, Laravel Reverb
 *   **Key Contributions:**
@@ -45,7 +53,7 @@
     *   **Implemented** WebSocket event broadcasting with Laravel Reverb and Redis caching, updating food item inventory across all active clients in real-time.
     *   **Optimized** client-side state using Alpine.js and Tailwind CSS, achieving sub-15ms client render times under peak load.
 
-### 2. SSS Daily Transaction Logs
+### 3. SSS Daily Transaction Logs
 *Transaction Logs Optimization & Database Tuning Console*
 *   **Stack:** Laravel, Vue.js, Inertia.js, Tailwind CSS (VILT Stack), MySQL
 *   **Key Contributions:**
@@ -53,23 +61,24 @@
     *   **Overhauled** database query performance by profiling execution plans and establishing composite indexes, reducing query times from **240ms to 12ms** on a 1.2M row table.
     *   **Streamlined** server-to-client data transfer using Inertia.js and Vue 3 to reduce HTTP payload sizes and speed up page changes.
 
-### 3. FileSSShare
+### 4. FileSSShare
 *Fun Drag-and-Drop Real-time Sharing Application*
 *   **Stack:** React, Laravel API, Laravel Reverb, Tailwind CSS
 *   **Key Contributions:**
     *   **Created** an upload dashboard in React, allowing users to drag and drop files.
     *   **Integrated** upload progress tracking and push notifications via Laravel Reverb, broadcasting secure download keys to recipients upon completion.
 
-### 4. DateSimply
+### 5. DateSimply
 *Clean Architecture Calendar Booking API Assessment*
 *   **Stack:** Laravel, Pest, PHPUnit, PHP Service Layers
 *   **Key Contributions:**
     *   **Refactored** the date-booking API to follow Service-Layer and Clean Architecture patterns, decoupling routing from database query logic.
     *   **Enforced** strict type safety by achieving 100% test coverage in Pest and setting PHPStan static analysis to Level 8 to catch type errors prior to runtime.
 
-### 5. Moonchild E-commerce
+### 6. Moonchild E-commerce
 *Full-Stack Storefront & Cart Session Handler*
 *   **Stack:** Laravel Blade, Livewire, Alpine.js, Tailwind CSS
 *   **Key Contributions:**
     *   **Authored** a cart state tracker to store shopping cart details in session variables, preventing cart reset during page navigation.
     *   **Constructed** checkout pipelines and session cache modules using Laravel and Redis cache drivers, storing cart information in Redis to optimize database lookups.
+
