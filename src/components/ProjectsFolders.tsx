@@ -26,11 +26,12 @@ interface Project {
 }
 
 export const ProjectsFolders = () => {
-  const [openFolderId, setOpenFolderId] = useState<string | null>('proj-scc'); // Keep first open
+  const [openFolderId, setOpenFolderId] = useState<string | null>('proj-pulse'); // Keep first open
   const [lightboxData, setLightboxData] = useState<{ projectId: string; tabIndex: number } | null>(null);
 
   // Track active tabs state for all projects
   const [activeTabs, setActiveTabs] = useState<Record<string, number>>({
+    'proj-pulse': 0,
     'proj-scc': 0,
     'proj-sss': 0,
     'proj-ssshare': 0
@@ -38,8 +39,27 @@ export const ProjectsFolders = () => {
 
   const projects: Project[] = [
     {
-      id: 'proj-scc',
+      id: 'proj-pulse',
       index: 'DIR_001',
+      title: 'Pulse: Ephemeral P2P Chat & Video (Technical Assessment)',
+      summary: 'Refactored, secured, and redesigned a highly buggy, broken, and unpolished anonymous WebRTC connection codebase into a high-performance production-ready application.',
+      category: 'Fullstack / Security Hardening',
+      techStack: ['React 19', 'Next.js 16', 'WebRTC', 'Mapbox GL', 'Prisma 7', 'PostgreSQL', 'Web Audio API', 'Vanilla CSS'],
+      context: {
+        problem: 'Inherited a broken assessment codebase with critical bugs: WebRTC data channel buffer crashes, coordinate leakage (triangulation risk), unauthenticated signaling (IDOR), heavy database load from polling, and an unpolished user experience. The objective was to make it run, make it secure, beautiful, and performant.',
+        frontend: 'Rebuilt the user interface from scratch with premium dark-mode glassmorphism. Added a synthesized audio UX (Web Audio API) for sound effects, client-side HEIC/HEIF image conversion with lazy loading, and an interactive Mapbox GL globe.',
+        backend: 'Hardened system security by introducing cryptographic session secrets to block signaling exploits (IDOR). Optimized signaling traffic with a dynamic polling throttle (down to 300ms during handshakes) and wrote a stale signal database garbage collector.'
+      },
+      tabs: [
+        { label: 'Interactive Map', url: 'pulse-technical-assessment-2hg8.vercel.app/map', svgType: 'image', scrollOffset: '0', imageSrc: '/projects/pulse/pulse-map.png' },
+        { label: 'Lobby Landing', url: 'pulse-technical-assessment-2hg8.vercel.app', svgType: 'image', scrollOffset: '0', imageSrc: '/projects/pulse/pulse-landing.png' },
+        { label: 'Video Connection', url: 'pulse-technical-assessment-2hg8.vercel.app/room/active', svgType: 'image', scrollOffset: '0', imageSrc: '/projects/pulse/pulse-chat-video.png' },
+        { label: 'Image Preview', url: 'pulse-technical-assessment-2hg8.vercel.app/room/active', svgType: 'image', scrollOffset: '0', imageSrc: '/projects/pulse/pulse-chat-image.png' }
+      ]
+    },
+    {
+      id: 'proj-scc',
+      index: 'DIR_002',
       title: 'SCC Canteen: Campus Food Reservation System',
       summary: 'Real-time meal reservation portal built for Saint Columban College. Features synchronized inventories and order queues.',
       category: 'Fullstack / Realtime',
@@ -60,7 +80,7 @@ export const ProjectsFolders = () => {
     },
     {
       id: 'proj-sss',
-      index: 'DIR_002',
+      index: 'DIR_003',
       title: 'SSS Daily Transaction Logs: Gov Digitization System',
       summary: 'Custom digital logbook engine custom-designed for a government agency branch to track daily counter visitors.',
       category: 'Fullstack / Database',
@@ -81,7 +101,7 @@ export const ProjectsFolders = () => {
     },
     {
       id: 'proj-ssshare',
-      index: 'DIR_003',
+      index: 'DIR_004',
       title: 'FileSSShare: WebRTC Peer-to-Peer File Sharing',
       summary: 'A fun WebRTC file sharing utility built with React, Node.js, and Reverb for instant device-to-device transfers regardless of local network constraints.',
       category: 'Fullstack / Realtime P2P',
